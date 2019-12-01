@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/jupemara/gcp-advent-calender-2019-001/doc#readme",
   "dependencies": {
-    "@google-cloud/functions-framework": "^1.3.2"
+    "@google-cloud/functions-framework": "^1.3.2",
+    "firebase-admin": "^8.8.0"
   },
   "devDependencies": {
     "ava": "^2.4.0",
