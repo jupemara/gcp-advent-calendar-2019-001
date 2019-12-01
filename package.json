@@ -32,6 +32,7 @@
     "firebase-admin": "^8.8.0"
   },
   "devDependencies": {
+    "@types/express": "github:types/npm-express",
     "ava": "^2.4.0",
     "ts-loader": "^6.2.1",
     "ts-node": "^8.5.4",
