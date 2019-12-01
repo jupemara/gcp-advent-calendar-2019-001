@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-gcloud functions deploy http \
-  --entry-point=http \
+gcloud functions deploy registerUserSync \
+  --entry-point=registerUserSync \
   --runtime=nodejs10 \
   --trigger-http \
   --region=asia-northeast1

@@ -6,8 +6,8 @@
   "scripts": {
     "test": "find test -name *.ts | xargs ava",
     "build": "webpack --mode=production",
-    "http:start": "./scripts/http/start.sh",
-    "http:deploy": "./scripts/http/deploy.sh",
+    "registerUserSync:start": "./scripts/http/start.sh",
+    "registerUserSync:deploy": "./scripts/http/deploy.sh",
     "event:start": "./scripts/event/start.sh",
     "event:deploy": "./scripts/event/deploy.sh",
     "event:local-publish": "./scripts/event/local-publish.sh",
