@@ -4,7 +4,7 @@
   "description": "same boundry on same repository",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "find test -name *.ts | xargs ava",
     "build": "webpack --mode=production",
     "http:start": "./scripts/http/start.sh",
     "http:deploy": "./scripts/http/deploy.sh",
@@ -31,9 +31,20 @@
     "@google-cloud/functions-framework": "^1.3.2"
   },
   "devDependencies": {
+    "ava": "^2.4.0",
     "ts-loader": "^6.2.1",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   }
 }
