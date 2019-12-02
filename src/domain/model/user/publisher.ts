@@ -1,5 +1,5 @@
-import { RegisterUserRequest } from './register-user-request';
+import { User } from './User';
 
 export interface IPublisher {
-  publish(request: RegisterUserRequest): Promise<void>;
+  publish(request: User): Promise<void>;
 }

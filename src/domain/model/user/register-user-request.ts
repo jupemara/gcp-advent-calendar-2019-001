@@ -1,5 +1,3 @@
-import { UserId } from './user-id';
-
-export interface RegisterUserRequest {
-  userId: UserId;
+export interface RegisterUserMessage {
+  userId: string;
 }
