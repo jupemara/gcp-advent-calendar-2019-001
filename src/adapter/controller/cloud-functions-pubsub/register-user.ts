@@ -1,6 +1,6 @@
-import { RegisterUserUseCase } from '../../../usecase/request-retister-user';
+import { RegisterUserUseCase } from '../../../usecase/register-user';
 
-export class RegisterUserController {
+export class RegisterUserSubscriber {
   constructor(private readonly usecase: RegisterUserUseCase) {}
   public async handle(event: Event) {
     const userId = this.toPayload(event).userId;
