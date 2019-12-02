@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
-gcloud functions deploy event \
-  --entry-point=event \
+gcloud functions deploy registerUser \
+  --entry-point=registerUser \
   --runtime=nodejs10 \
   --trigger-event=google.pubsub.topic.publish \
-  --trigger-resource=test-topic \
-  --region=asia-northeast1 \
+  --trigger-resource=register-user-request \
+  --region=asia-northeast1
