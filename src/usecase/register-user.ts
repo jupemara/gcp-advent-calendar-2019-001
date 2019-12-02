@@ -1,9 +1,11 @@
-import { IPublisher } from '../domain/model/user/publisher';
+import { IUserRepository } from '../domain/model/user/user-repository';
+import { User } from '../domain/model/user/User';
 import { UserId } from '../domain/model/user/user-id';
 
 export class RegisterUserUseCase {
-  constructor(private readonly publisher: IPublisher) {}
+  constructor(private readonly userRepository: IUserRepository) {}
   public async execute(userId: string): Promise<void> {
-    await this.publisher.publish({ userId: new UserId(userId) });
+    const user = new User(new UserId(userId));
+    await this.userRepository.store(user);
   }
 }
