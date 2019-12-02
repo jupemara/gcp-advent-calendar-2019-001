@@ -7,7 +7,7 @@ export class RegisterUserController {
     try {
       const userId = req?.body?.userId;
       await this.usecase.execute(userId);
-      res.status(201).send('');
+      res.status(202).send('');
     } catch (e) {
       console.warn(e.stack);
       res.status(400).send('');
