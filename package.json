@@ -30,7 +30,7 @@
   "dependencies": {
     "@google-cloud/functions-framework": "^1.3.2",
     "@google-cloud/pubsub": "^1.1.5",
-    "firebase-admin": "^8.8.0"
+    "firebase-admin": "^11.4.1"
   },
   "devDependencies": {
     "@types/express": "github:types/npm-express",
